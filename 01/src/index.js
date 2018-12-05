@@ -1,6 +1,6 @@
 
-const calibrate  = () => {
-    return 0
+const calibrate  = (baseFrequency) => {
+    return baseFrequency
 }
 
 module.exports = {
