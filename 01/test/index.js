@@ -15,3 +15,10 @@ test('increase frequency once', t => {
     t.equal(calibrate(baseFrequency, frequencyChanges), 1)
     t.end()
 })
+
+test('decrease frequency once', t => {
+    const baseFrequency = 0
+    const frequencyChanges = [ '-1' ]
+    t.equal(calibrate(baseFrequency, frequencyChanges), -1)
+    t.end()
+})
