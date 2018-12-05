@@ -1,0 +1,19 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/tape-watch -1 test/**/*.js | tap-spec",
+    "test:watch": "node_modules/.bin/tape-watch test/**/*.js | tap-spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.7",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1",
+    "tape-watch": "^2.3.0"
+  }
+}
