@@ -1,6 +1,6 @@
 const test = require('tape')
 
-const { calibrate } = require('../src')
+const calibrate = require('../src/calibrate')
 
 test('no changes to frequency', t => {
     const baseFrequency = 0

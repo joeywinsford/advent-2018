@@ -7,6 +7,4 @@ const calibrate  = (baseFrequency, changes) => {
     return calibrate(baseFrequency + parseInt(frequencyChange), tail)
 }
 
-module.exports = {
-    calibrate
-}
+module.exports = calibrate
