@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "start:watch": "node_modules/.bin/nodemon --exec \"npm start\"",
     "test": "node_modules/.bin/tape test/**/*.js | tap-spec",
     "test:watch": "node_modules/.bin/nodemon --exec \"npm test\""
   },
