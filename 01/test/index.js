@@ -29,3 +29,10 @@ test('increase and decrease frequency', t => {
     t.equal(calibrate(baseFrequency, frequencyChanges), 3)
     t.end()
 })
+
+test('ignore blank changes', t => {
+    const baseFrequency = 0
+    const frequencyChanges = [ '' ]
+    t.equal(calibrate(baseFrequency, frequencyChanges), 0)
+    t.end()
+})
